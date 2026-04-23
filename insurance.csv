@@ -1,0 +1,26 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn import metrics
+
+# Load dataset
+data = pd.read_csv("insurance.csv")
+
+# Display data
+print(data.head())
+print(data.info())
+
+# Check missing values
+print(data.isnull().sum())
+
+# Data description
+print(data.describe())
+
+# Data visualization
+sns.set()
+
+# Age
